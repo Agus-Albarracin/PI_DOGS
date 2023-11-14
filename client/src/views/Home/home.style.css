@@ -1,0 +1,189 @@
+.home_cont{
+ background-image: url("../img/fondo.jpg");
+ background-size:cover;
+ background-attachment: fixed;
+ grid-template-columns: auto;
+ grid-template-rows: 10% 80% 10%;
+ background-color: rgb(255, 157, 38);
+}
+
+.navbar{
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.341);
+}
+
+.cards{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/4;
+    background-color: rgba(255, 255, 255, 0.349);
+    grid-auto-rows: minmax(0px, 675px);
+
+    
+    /* overflow: hidden; */
+}
+
+.cards_cont{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    place-items: center;
+    
+}
+
+.footer{
+    display: flex;
+    flex-direction: start;
+    color: rgba(255, 255, 255, 0.200);
+    background-color: rgba(0, 0, 0, 0.395);
+}
+
+@media (max-width: 720px) { 
+
+    .home_cont{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 25% 65%  10%;
+        background-color: rgb(255, 157, 38);
+        border: 1px solid black;
+        padding-left: 25px;
+        padding-right: 25px;
+       }
+       
+       .logo{
+           background-color: white;
+       }
+       .navbar{
+           
+           background-color: blueviolet;
+       }
+       .filter{
+          background-color: aquamarine;
+       }
+       .cards{
+           
+           grid-row: 2/4;
+           color: white;
+           background-color: black;
+           /* overflow: auto; */
+       }
+       .cards_cont{
+        padding-left: 10px;
+    }
+    
+       .paginado{
+           background-color: rgb(0, 255, 42);
+       }
+
+  }
+  @media (max-width: 570px) { 
+
+    .home_cont{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 25% 65%  10%;
+        background-color: rgb(255, 157, 38);
+        border: 1px solid black;
+        padding-left: 0px;
+        padding-right: 0px;
+       }
+       
+       .logo{
+           background-color: white;
+       }
+       .navbar{
+           
+           background-color: blueviolet;
+       }
+       .filter{
+          background-color: aquamarine;
+       }
+       .cards{
+           
+           grid-row: 2/4;
+           color: white;
+           background-color: black;
+           /* overflow: auto; */
+       }
+
+    
+       .paginado{
+           background-color: rgb(0, 255, 42);
+       }
+
+  }
+  
+@media (max-width: 375px) { 
+
+    .home_cont{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 25% 65%  10%;
+        background-color: rgb(255, 157, 38);
+        border: 1px solid black;
+       }
+       
+       .logo{
+           background-color: white;
+       }
+       .navbar{
+           
+           background-color: blueviolet;
+       }
+       .filter{
+          background-color: aquamarine;
+       }
+       .cards{
+           
+           grid-row: 2/4;
+           color: white;
+           background-color: black;
+           /* overflow: auto; */
+       }
+       .cards_cont{
+        padding-left: 10px;
+    }
+    
+       .paginado{
+           background-color: rgb(0, 255, 42);
+       }
+
+  }
+
+
+  @media (max-width: 360px) {
+
+    .home_cont{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 25% 65%  10%;
+        background-color: rgb(255, 157, 38);
+        border: 1px solid black;
+       }
+       
+       .logo{
+           background-color: white;
+       }
+       .navbar{
+           
+           background-color: blueviolet;
+       }
+       .filter{
+          background-color: aquamarine;
+       }
+       .cards{
+           
+           grid-row: 2/4;
+           color: white;
+           background-color: black;
+           /* overflow: auto; */
+       }
+       .cards_cont{
+        padding-left: 10px;
+    }
+    
+       .paginado{
+        
+           background-color: rgb(0, 255, 42);
+       }
+
+  }

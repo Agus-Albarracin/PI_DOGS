@@ -9,7 +9,7 @@ const { routes } = require("./routes/indexroutes")
 require("./db")
 
 
-app__server.name = "API__DOGS";
+// app__server.name = "API__DOGS";
 
 app__server.use(express.json())
 app__server.use(morgan("dev"));
@@ -25,7 +25,7 @@ app__server.use((req, res, next) => {
     res.header(
        'Access-Control-Allow-Methods',
        'GET, POST, OPTIONS, PUT, DELETE'
-    ); 
+    );
     next();
  });
 

@@ -1,10 +1,12 @@
 const express = require("express");
-const router = express.Router();
+const routes = express.Router();
 
 const dogs__routes= require("./dogs__routes")
 const temps__routes = require("./temps__routes")
 
-router.use("/dogs", dogs__routes);
-router.use("/temperaments", temps__routes);
+routes.use("/dogs", dogs__routes);
+routes.use("/temperaments", temps__routes);
 
-module.exports = { router }
+module.exports = { routes }
+
+

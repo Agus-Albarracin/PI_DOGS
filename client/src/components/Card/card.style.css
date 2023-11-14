@@ -1,0 +1,120 @@
+.card_cont{
+    background-image: url("../../views/img/pelosmarron.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    text-align: center;
+    font-size: medium;
+    width: 70%;
+    max-height: 95%;
+    grid-template-columns: auto;
+    border: 3px solid rgba(5, 5, 5, 0.447);
+    border-radius: 10%;
+    cursor: pointer;
+    transform: translateZ(0);
+    transition: transform 0.12s ease-out;
+   }
+   
+   .card_cont:hover {
+    transform: scale(1.05);
+   }
+
+   .img_card{
+    border-radius: 10%;
+    margin-top: 10px;
+    width: 90%;
+    height: 140px;
+   }
+
+   .data_dog{
+    background-color: rgba(1, 1, 1, 0.307);
+    border-radius: 10%;
+    color: white;
+    font-size: medium;
+   }
+
+   @media (max-width: 720px){
+    .card_cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+        background-color: rgb(39, 93, 35);
+        border: 3px solid rgb(198, 33, 190);
+    
+        cursor: pointer;
+        transform: translateZ(0);
+        transition: transform 0.12s ease-out;
+       }
+       
+       .card_cont:hover {
+        transform: scale(1.05);
+       }
+       .card_cont{
+        width: 90%;
+        height: 90%;
+    }
+       .img_card{
+        margin-top: 10px;
+        width: 100px;
+        
+   }
+}
+ 
+   @media (max-width: 375px){
+    .card_cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+        background-color: rgb(39, 93, 35);
+        border: 3px solid rgb(198, 33, 190);
+    
+        cursor: pointer;
+        transform: translateZ(0);
+        transition: transform 0.12s ease-out;
+       }
+       
+       .card_cont:hover {
+        transform: scale(1.05);
+       }
+       .card_cont{
+        width: 90%;
+        height: 90%;
+    }
+       .img_card{
+        margin-top: 10px;
+        width: 100px;
+        
+   }
+   }
+ 
+ 
+ 
+   @media (max-width: 360px){
+    .card_cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+        background-color: rgb(39, 93, 35);
+        border: 3px solid rgb(198, 33, 190);
+    
+        cursor: pointer;
+        transform: translateZ(0);
+        transition: transform 0.12s ease-out;
+       }
+       
+       .card_cont:hover {
+        transform: scale(1.05);
+       }
+       .card_cont{
+        width: 90%;
+        height: 90%;
+    }
+       .img_card{
+        margin-top: 10px;
+        width: 100px;
+        
+   }
+   }

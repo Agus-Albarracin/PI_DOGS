@@ -1,8 +1,8 @@
-const { Dog } = require("../db");
+const { Dogs } = require("../../db");
 
 // Busca el perro por id y lo borra
 const deleteDog = async (id) => {
-  const delete_dog_sequeleze = await Dog.findByPk(id)
+  const delete_dog_sequeleze = await Dogs.findByPk(id)
 //El metodo findByPk de sequeleze, obtiene solo una entrada de la tabla, utilizando la clave principal proporcionada.
   if(!delete_dog_sequeleze) throw Error("No se ha encontrado el perro que intentas eliminar o ya se ha eliminado!")
 

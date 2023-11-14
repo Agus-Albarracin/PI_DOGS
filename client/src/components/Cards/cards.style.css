@@ -1,0 +1,94 @@
+.box_cont{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 90% 10%;
+}
+
+
+.cards_cont{
+display: grid;
+grid-template-columns: 25% 25% 25% 25%;
+background-color: rgba(0, 0, 0, 0);
+place-items: center;
+}
+
+.page_cont{
+display: grid;
+margin-top: 10px;
+background-color: rgba(0, 21, 255, 0);
+}
+
+@media (max-width: 720px) { 
+
+.cards{
+           
+grid-row: 2/4;
+color: white;
+background-color: black;
+           /* overflow: auto; */
+ }
+
+.cards_cont{
+padding-left: 10px;
+}
+    
+.paginado{
+background-color: rgba(0, 255, 42, 0);
+}
+
+}
+
+@media (max-width: 570px) { 
+
+.cards{
+           
+grid-row: 2/4;
+color: white;
+background-color: black;
+/* overflow: auto; */
+}
+
+    
+.paginado{
+background-color: rgb(0, 255, 42);
+}
+
+}
+  
+@media (max-width: 375px) { 
+
+.cards{           
+grid-row: 2/4;
+color: white;
+background-color: black;
+/* overflow: auto; */       }
+.cards_cont{
+padding-left: 10px;
+}
+    
+.paginado{
+background-color: rgb(0, 255, 42);
+}
+
+}
+
+
+ @media (max-width: 360px) {
+
+.cards{
+           
+grid-row: 2/4;
+color: white;
+background-color: black;
+/* overflow: auto; */
+}
+.cards_cont{
+padding-left: 10px;
+}
+    
+.paginado{
+        
+background-color: rgb(0, 255, 42);
+}
+
+}

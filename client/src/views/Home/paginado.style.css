@@ -1,0 +1,118 @@
+.foot_cont{
+    display: grid;
+    grid-template-columns: 30% 15% 5% 5% 15% 30%;
+    grid-template-rows: 50% 50%;
+}
+
+.mid{
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.foot_button{
+    background:#000000;
+    color:#fff;
+    border:none;
+    border-radius: 5px;
+    position:relative;
+    font-size:1.5em;
+    cursor:pointer;
+    transition:500ms ease all;
+    outline:none;
+  }
+  .foot_button:hover{
+    background:#fff;
+    color:#060606;
+  }
+  .prev{
+    margin-right: 20px;
+  }
+  .next{
+    margin-left: 20px;
+  }
+  .foot_input{
+    background-color: #ffffffb9;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    text-align: center;
+    outline: none;
+    font-size: auto;
+    margin: 12px;
+    height: 20px;
+    width: 50px;
+  }
+
+  .foot_p{
+    margin-top: 10.9px;
+    display: flex;
+    flex-direction: center;
+    text-align: center;
+    font-size: auto;
+  }
+
+.p2{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: center ;
+  text-align: center;
+  font-size:small;
+}
+
+@media (max-width: 720px) {
+  .foot_cont{
+        
+        display: grid;
+        grid-template-columns: 10% 30% 15% 10% 30% 10% ;
+        grid-template-rows: 50% 10%;
+     }
+  
+     .p2{
+    grid-column: 2/3;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: center ;
+  text-align: center;
+  font-size:small;
+}
+}
+
+@media (max-width: 375px) {
+  .foot_cont{
+      
+        display: grid;
+        grid-template-columns: 10% 30% 15% 10% 30% 10% ;
+        grid-template-rows: 50% 10%;
+     }
+  
+     .p2{
+    grid-column: 2/3;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: center ;
+  text-align: center;
+  font-size:small;
+}
+}
+
+
+@media (max-width: 360px) {
+  .foot_cont{
+        
+        display: grid;
+        grid-template-columns: 10% 30% 15% 10% 30% 10% ;
+        grid-template-rows: 50% 10%;
+  }
+  .p2{
+  grid-column: 2/3;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: center ;
+  text-align: center;
+  font-size:small;
+}
+} 

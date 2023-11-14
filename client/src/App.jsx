@@ -1,34 +1,31 @@
+//react
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Route, Routes } from "react-router-dom"
+//BrowserRouter me va a permitir poder navegar entre los componentes de la pagina.
+//Route con router vamos a poder declarar las rutas.
+//views
+import Home from "./views/Home/home"
+import Landing from "./views/LandingPage/landing"
+import Detail from "./views/Detail/detail"
+import Form from "./views/Form/form"
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
+    //EXACT va a evitar que se pisen nuestras rutas de detail y home. se va renderizar cuando sea exactamente home.
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+
+    <Routes>
+   
+      <Route exact path="/home" element={ <Home />}></Route>
+      <Route path="/landing" element={ Landing }></Route>
+      <Route path="/form" element={ Form }></Route>
+      <Route path="/home/:id" element={ <Detail />}></Route>
+
+   
+    </Routes>
+    </div>
   )
 }
 
