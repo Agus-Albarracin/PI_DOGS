@@ -1,4 +1,4 @@
-import { CLEAN_DETAIL, FILTER_DOGS_BY_ORIGIN, FILTER_TEMPERAMENTS, GET_DOGS, GET_DOG_BY_ID, GET_DOG_BY_NAME, GET_TEMPERAMENTS, ORDER_ALPHABETIC, ORDER_WEIGHT, POST_DOG, DELETE_DOG } from "./actions-type";
+import { CLEAN_DETAIL, FILTER_DOGS_BY_ORIGIN, FILTER_TEMPERAMENTS, GET_DOGS, GET_DOG_BY_ID,  GET_DOG_BYID_BYNAME, GET_TEMPERAMENTS, ORDER_ALPHABETIC, ORDER_WEIGHT, POST_DOG, DELETE_DOG } from "./actions-type";
 import axios from "axios";
 axios.defaults.baseURL = "http://localhost:3001"
 
@@ -9,7 +9,7 @@ export const getDogs = () => {
     try {
       const { data } = await axios.get("/dogs")
       // console.log( data.map(data => data.id) ) 
-      return dispatch({ type: GET_DOGS, payload: data });
+           dispatch({ type: GET_DOGS, payload: data });
     }
     catch (error) {
       return error.message;
@@ -37,7 +37,7 @@ export const _getDog__ById__ByName = (name) => {
     try {
       const { data } = await axios.get(`/dogs/${name}`)
       console.log(data)
-      return dispatch({ type: GET_DOG_BY_NAME, payload: data });
+      return dispatch({ type:  GET_DOG_BYID_BYNAME, payload: data });
     }
     catch (error) {
       return error.message;
@@ -67,7 +67,9 @@ export const getTemperaments = () => {
 export const postDog = (newDog) => {  
   return async (dispatch) => {
     try {
-      const { data } = await axios.post(`/dogs`, newDog)
+      console.log("esta llegando info de post a actions ", newDog)
+     
+      const  { data }  = await axios.post(`/dogs`, newDog)
       return dispatch({ type: POST_DOG, payload: data });
     }
     catch (error) {
@@ -97,6 +99,8 @@ export const filterByTemp = (temp) => {
 
 // Filtra por origen
 export const filterByOrigin = (origin) => {
+  console.log("info que llega a actions", origin)
+  
   return { type: FILTER_DOGS_BY_ORIGIN, payload: origin };
 };
 

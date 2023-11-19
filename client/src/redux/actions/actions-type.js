@@ -1,6 +1,6 @@
 export const GET_DOGS = "GET_DOGS";
-export const GET_DOG_BY_ID = "GET_DOG_BY_ID";
-export const GET_DOG_BY_NAME = "GET_DOG_BY_NAME";
+export const GET_DOG_BYID_BYNAME = "GET_DOG_BYID_BYNAME";
+export const GET_DOG_BY_ID = "GET_DOG_BY_ID"
 export const CLEAN_DETAIL = "CLEAN_DETAIL"
 export const GET_TEMPERAMENTS = "GET_TEMPERAMENTS";
 export const POST_DOG = "POST_DOG";
@@ -10,5 +10,6 @@ export const FILTER_TEMPERAMENTS = "FILTER_TEMPERAMENTS";
 export const FILTER_DOGS_BY_ORIGIN = "FILTER_DOGS_BY_ORIGIN";
 export const ORDER_ALPHABETIC = "ORDER_ALPHABETIC";
 export const ORDER_WEIGHT = "ORDER_WEIGHT";
+
 // export const ORDER_HEIGHT = "ORDER_HEIGHT";
 // export const ORDER_LIFESPAN = "ORDER_LIFESPAN";

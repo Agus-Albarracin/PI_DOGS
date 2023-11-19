@@ -5,9 +5,9 @@ import pagePrev from "../Paginado/imgpag/pagePrev.png"
 import pageNext from "../Paginado/imgpag/pageNext.png"
 import pageLast from "../Paginado/imgpag/pageLast.png"
 
-function Pagination({ totalDogs, page, currentPage, setCurrentPage }) {
+function Pagination({ totalDogs, navtotalDogs, page, currentPage, setCurrentPage }) {
 
-  const totalPages = Math.ceil(totalDogs / page);
+  const totalPages = Math.ceil(totalDogs? totalDogs / page : navtotalDogs / page);
 
   const pageNumbers = [];
   const maxPagesView = 5

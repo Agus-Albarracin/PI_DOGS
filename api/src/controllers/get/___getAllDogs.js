@@ -47,7 +47,7 @@ const get__API_dogs = async () => {
   return API__data_dogs; // DATA API Dogs
 }
 
-// Unimos la informacion
+// Unimos la informacion 
 const __getAllDogs = async () => {
 
   const API__dogs = await get__API_dogs();

@@ -1,0 +1,46 @@
+.detail_cont{
+    background-image: url("https://www.publicdomainpictures.net/pictures/180000/nahled/dog-foodprint-frame.jpg");
+    background-size:cover;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 90% 5% 5%;
+    height: 742px;
+ }
+
+.foto{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.pic{
+   width: 60%;
+   height: 60%;
+   max-height: 400px;
+   margin-top: 25%;
+   margin-left: 40%;
+   border-radius: 10%;
+}
+.detail{
+    color: rgb(239, 198, 124);
+    font-family: cursive;
+    display: grid;
+    grid-column: 2/3;
+    place-items: center;
+    place-content: center;
+    margin-top: 20%;
+    margin-right: 40%;
+}
+
+.footerdetail{
+    background-color: rgba(0, 0, 0, 0.118);
+    color: rgba(255, 255, 255, 0.648);
+    display: grid;
+    grid-row: 3/4;
+    grid-column: 1/3;
+    margin-top:0.9%;
+    height: 24px;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    padding-right: 78%;
+}

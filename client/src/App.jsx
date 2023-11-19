@@ -8,6 +8,7 @@ import Home from "./views/Home/home"
 import Landing from "./views/LandingPage/landing"
 import Detail from "./views/Detail/detail"
 import Form from "./views/Form/form"
+
 import './App.css'
 
 function App() {
@@ -19,9 +20,9 @@ function App() {
     <Routes>
    
       <Route exact path="/home" element={ <Home />}></Route>
-      <Route path="/landing" element={ Landing }></Route>
-      <Route path="/form" element={ Form }></Route>
-      <Route path="/home/:id" element={ <Detail />}></Route>
+      <Route path="/landing" element={ <Landing/> }></Route>
+      <Route path="/form" element={ <Form /> }></Route>
+      <Route path="/detail/:id" element={ <Detail />}></Route>
 
    
     </Routes>
