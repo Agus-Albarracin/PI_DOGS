@@ -1,6 +1,7 @@
 .home_cont{
  display: grid;
- background-image: url("https://nupec.com/wp-content/uploads/2021/12/dog-hair-pattern-background-24LK6P3-1024x685.jpg");
+ /* background-image: url("https://nupec.com/wp-content/uploads/2021/12/dog-hair-pattern-background-24LK6P3-1024x685.jpg"); */
+ background-image: url("https://www.semana.com/resizer/IbeySIzjteHMURtLVtKjPcbstHw=/fit-in/1920x0/smart/filters:format(jpg):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/semana/KH2POCEWURF67G6GGNNDHH2DAA.jpg");
  background-size:cover;
  background-attachment: fixed;
  grid-template-columns: auto;

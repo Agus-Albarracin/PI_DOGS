@@ -1,5 +1,6 @@
 .card_cont{
-    background-image: url("../../views/img/pelosmarron.jpg");
+    /* background-image: url("../../views/img/pelosmarron.jpg"); */
+    background-image: url("https://img.freepik.com/fotos-premium/textura-piel-fondo_14117-1375.jpg");
     background-size: cover;
     background-attachment: fixed;
     display: grid;
@@ -8,7 +9,7 @@
     width: 70%;
     max-height: 70%;
     grid-template-columns: auto;
-    border: 3px solid rgba(5, 5, 5, 0.447);
+    border: white 8px outset;
     border-radius: 10%;
     cursor: pointer;
     transform: translateZ(0);
@@ -35,9 +36,6 @@
 
    @media (max-width: 860px){
     .card_cont{
-        background-image: url("../../views/img/pelosmarron.jpg");
-        background-size: cover;
-        background-attachment: fixed;
         display: grid;
         text-align: center;
         font-size: xx-small;
