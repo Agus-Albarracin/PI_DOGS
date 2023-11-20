@@ -6,15 +6,7 @@
 }
 
 .nav_logo{ 
-
-  background-image: url("../../views/img/logo.jpg");
-  background-size:contain;
-  background-repeat: no-repeat;
-  background-attachment:inherit;
-
-  height: 100%;
-  width: 100%;
-
+width: 180px;
 }
 
 .select{
@@ -69,111 +61,40 @@
     color:#060606;
   }
   
-  @media (max-width: 720px){
-    .navBar_cont{
-        display:  flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap:15px
-     }     
-     .select{
+@media (max-width: 720px){
+    .navBar_cont{ 
       display: flex;
-      flex-direction: center;
+      flex-direction: column;
       justify-content: center;
+      align-items: center;
+      gap: 15px;
+    }
+    .nav_logo{ 
       width: 50%;
-      padding-left: 30px;
-      padding-right: 30px;
+    }
+    
+    .select{
+      width: 50%;
+    }
+    
+    
+    .searchBar{
+        width: 50%;
+      }
 
-     } 
-     .searchBar{
-      display: flex;
-      flex-direction: center;
-      justify-content: center;
-      width: 50%;
-      padding-left: 30px;
-      padding-right: 30px;
-
-     } 
-     .nav_button{
-      display: flex;
-      flex-direction: center;
-      justify-content: center;
-      width: 50%;
-      padding-left: 30px;
-      padding-right: 30px;
-     }
+    .nav_button{
+        width: 60%;
+        margin-bottom: 10%;
+      }
   }
 
 
   @media (max-width: 375px){
-    .navBar_cont{
-        display:  flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap:15px
-     }     
-     .select{
-      display: flex;
-      flex-direction: center;
-      justify-content: center;
-      width: 50%;
-      padding-left: 30px;
-      padding-right: 30px;
 
-     } 
-     .searchBar{
-      display: flex;
-      flex-direction: center;
-      justify-content: center;
-      width: 50%;
-      padding-left: 30px;
-      padding-right: 30px;
-     } 
-     .nav_button{
-      display: flex;
-      flex-direction: center;
-      justify-content: center;
-      width: 50%;
-      padding-left: 30px;
-      padding-right: 30px;
-     }
   }
 
 
 
   @media (max-width: 360px){
-    .navBar_cont{
-        display:  flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap:15px
-     }     
-     .select{
-      display: flex;
-      flex-direction: center;
-      justify-content: center;
-      width: 50%;
-      padding-left: 30px;
-      padding-right: 30px;
-
-     } 
-     .searchBar{
-      display: flex;
-      flex-direction: center;
-      justify-content: center;
-      width: 50%;
-      padding-left: 30px;
-      padding-right: 30px;
-     } 
-     .nav_button{
-      display: flex;
-      flex-direction: center;
-      justify-content: center;
-      width: 50%;
-      padding-left: 30px;
-      padding-right: 30px;
-     }
+   
   }

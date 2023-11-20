@@ -13,7 +13,6 @@ import axios from "axios";
 
 const Detail = () =>{
 
-    const dispatch = useDispatch();
     const {id} = useParams();
     const [dogs, setDogs] = useState("")
 
@@ -28,6 +27,7 @@ const Detail = () =>{
         });
         return setDogs({});
      }, [id]);
+     
 
     return (
     <div className="detail_cont">
@@ -35,10 +35,11 @@ const Detail = () =>{
            <img className="pic" src={dogs.image && dogs.image} alt="name"></img>
         </div>
         <div className="box detail">
-           <h1>Altura: {dogs.name && dogs.height}</h1>
-           <h1>Peso: {dogs.weight && dogs.weight}</h1>
-           <h1>Años de vida:{dogs.life_span && dogs.life_span}</h1>
-           <h1>Temperaments: {dogs.temperament && dogs.temperament?.map((t) => t + ". ") }</h1>
+            <h1>{dogs.name && dogs.name}</h1>
+           <h2>Altura: {dogs.height && dogs.height}</h2>
+           <h2>Peso: {dogs.weight && dogs.weight}</h2>
+           <h2>Años de vida:{dogs.life_span && dogs.life_span}</h2>
+           <h2>Temperaments: {dogs.temperament && dogs.temperament?.map((t) => t + ". ") }</h2>
         </div>
         <footer className="footerdetail"> Derechos reservados© </footer>    
     </div>

@@ -7,8 +7,10 @@ const NavBar = ({busqueda, handleChange, onClick }) =>{
 
 return(
 <div className="navBar_cont">
-
-        <header className="nav_logo"></header>
+           
+        <div>
+          <img className="nav_logo" src="https://img.freepik.com/vector-premium/logo-perro-que-es-cabeza-perro_649271-1380.jpg?w=2000"></img>
+        </div>
 
         <div className="origins">
         <legend>Origin</legend>

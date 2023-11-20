@@ -43,14 +43,19 @@
     height: 35px;
   }
 
+  @media (max-width: 960px){
+    .paginationContainer{
+      gap: 10px;
+   }
+  }
 
   @media (max-width: 720px){
     .paginationContainer{
         display:  flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
-        
+        margin-left: 6%;
      }
   }
 
@@ -59,8 +64,9 @@
     .paginationContainer{
         display:  flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
+        margin-left: 6%;
         
      }
   }
@@ -71,8 +77,9 @@
     .paginationContainer{
         display:  flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
+        margin-left: 6%;
         
      }
   }

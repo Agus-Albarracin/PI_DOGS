@@ -80,12 +80,14 @@ const navcurrentDogs = navdogs?.slice(firstpage, lastpage);
 
 return( <div className="box_cont">
 { /*🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶  HTML DE NavBar 🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶*/}
+<div>
 <NavBar
 busqueda={busqueda}
 handleChange={handleChange}
 onClick={handleFilterByOrigin}
 value={origin}
 />
+</div>
 
 { /*🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶  HTML DE CARTAS 🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶*/}  
 <div className="cards_cont" key={currentPage}>
