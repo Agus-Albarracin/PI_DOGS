@@ -35,10 +35,10 @@ const Detail = () =>{
            <img className="pic" src={dogs.image && dogs.image} alt="name"></img>
         </div>
         <div className="box detail">
-            <h1>{dogs.name && dogs.name}</h1>
-           <h2>Altura: {dogs.height && dogs.height}</h2>
-           <h2>Peso: {dogs.weight && dogs.weight}</h2>
-           <h2>Años de vida:{dogs.life_span && dogs.life_span}</h2>
+           <h1 className="nametitle">{dogs.name && dogs.name}</h1>
+           <h2>Height: {dogs.height && dogs.height}</h2>
+           <h2>Weight: {dogs.weight && dogs.weight}</h2>
+           <h2>Life span:{dogs.life_span && dogs.life_span}</h2>
            <h2>Temperaments: {dogs.temperament && dogs.temperament?.map((t) => t + ". ") }</h2>
         </div>
         <footer className="footerdetail"> Derechos reservados© </footer>    

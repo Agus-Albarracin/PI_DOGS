@@ -112,22 +112,22 @@ return (
 <main className="cont"><br/>
 
        <form className="form_cont" onSubmit={handleSubmit}> 
-         <label htmlFor="text">Raza</label><br></br>
-         <input className="input_text" name="name" id="name" placeholder="Escriba la raza" onChange={handleInputChange}></input><br></br>
+         <label htmlFor="text">Name</label><br></br>
+         <input className="input_text" name="name" id="name" placeholder="write the race" onChange={handleInputChange}></input><br></br>
 
-         <label htmlFor="text">Peso</label><br></br>
-         <input className="input_text" name="weight" id="weight" placeholder="Ingrese el peso" onChange={handleInputChange}></input><br></br>
+         <label htmlFor="text">weight</label><br></br>
+         <input className="input_text" name="weight" id="weight" placeholder="write the weight" onChange={handleInputChange}></input><br></br>
 
-         <label htmlFor="text">Altura</label><br></br>
-         <input className="input_text" name="height" id="height" placeholder="Ingrese la altura" onChange={handleInputChange}></input><br></br>
+         <label htmlFor="text">height</label><br></br>
+         <input className="input_text" name="height" id="height" placeholder="write the height" onChange={handleInputChange}></input><br></br>
 
-         <label htmlFor="text">Años de vida</label><br></br>
-         <input className="input_text" name="life_span" id="life_span" placeholder="Años de vida" onChange={handleInputChange}></input><br></br>
+         <label htmlFor="text">Life span</label><br></br>
+         <input className="input_text" name="life_span" id="life_span" placeholder="write the life span" onChange={handleInputChange}></input><br></br>
 
-         <label htmlFor="text">Temperamentos</label><br></br>
-         <input className="input_text"  name="temperament" id="temperament" placeholder="Escriba los temperamentos" onChange={handleInputTemp}></input><br></br><br></br>
+         <label htmlFor="text">Temperaments</label><br></br>
+         <input className="input_text"  name="temperament" id="temperament" placeholder="write the temperaments" onChange={handleInputTemp}></input><br></br><br></br>
 
-         <button type="submit" className="boton_form" onClick={handleSubmit}>CREAR</button>
+         <button type="submit" className="boton_form" onClick={handleSubmit}>CREATE</button>
       </form>
 
     <div className="form_cont_izq">

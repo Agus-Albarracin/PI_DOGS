@@ -45,7 +45,7 @@ return(
         
         <a href="http://localhost:5173/form">
         <button className="nav_button">
-        <p>CREAR</p>
+        <p>CREATE</p>
         </button>
         </a>
         
