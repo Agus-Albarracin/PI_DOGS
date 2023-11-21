@@ -54,7 +54,8 @@ export const cleanDetail = () => {
 export const getTemperaments = () => {  
   return async (dispatch) => {
     try {
-      const { data } = await axios.get(`/temperaments`)
+      const { data } = await axios.get(`/dogs`)
+      data = data.temperament
       return dispatch({ type: GET_TEMPERAMENTS, payload: data });
     }
     catch (error) {

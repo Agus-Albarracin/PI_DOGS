@@ -15,7 +15,7 @@ const rootReducer = (state = initialState, {type, payload}) => {
   switch(type){
 
     case GET_DOGS: {
-      console.log("se muestra alldogs", payload)
+      // console.log("se muestra alldogs", payload)
       return {
         ...state,
         allDogs: payload,

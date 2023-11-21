@@ -1,9 +1,31 @@
 //style
 import "./navbar.style.css"
-//actions
-import { _getDog__ById__ByName } from "../../redux/actions/actions"
+//react
+import Select from "react-select"
+import { useState } from "react"
+import { useSelector } from "react-redux"
 
-const NavBar = ({busqueda, handleChange, onClick }) =>{
+const NavBar = ({busqueda, handleChange, onClick, ot, handleSelectChange}) =>{
+
+// const allDogs = useSelector((state) => state.allDogs)
+// //? filtro de temps
+// const [vselect, setVselect] = useState("")
+// const [sdogs, setSdogs] = useState([])
+
+// const filter_temp = (value) =>{
+//     var filter_temp = allDogs.filter((dogs) =>
+//      dogs.temperament.includes(value))
+//      console.log("dogs x temps", filter_temp)
+//      setSdogs(filter_temp)    
+// }
+
+// const handleSelectChange = (event) =>{
+//    const value_select_event = event.value
+//    //valor de lo que captura el selecct
+//    console.log("valor del select", value_select_event)
+//    setVselect(value_select_event)
+//    filter_temp(value_select_event)  
+// }
 
 return(
 <div className="navBar_cont">
@@ -26,13 +48,11 @@ return(
       
         </div>
 
-        <select className="select">
-        <option value="value 1"> Temperaments</option>
-        <option value="value">Value 1</option>
-        <option value="value">Value 1</option>
-        <option value="value">Value 1</option>
-        <option value="value">Value 1</option>
-        </select>
+        <Select className="select"
+         options={ot}
+         onChange= { handleSelectChange } 
+        >
+        </Select>
      
 
         <input 
