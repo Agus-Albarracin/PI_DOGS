@@ -15,7 +15,7 @@ const rootReducer = (state = initialState, {type, payload}) => {
   switch(type){
 
     case GET_DOGS: {
-      // console.log("se muestra alldogs", payload)
+      console.log("se muestra alldogs", payload)
       return {
         ...state,
         allDogs: payload,
@@ -33,23 +33,11 @@ const rootReducer = (state = initialState, {type, payload}) => {
       };
     };
 
-    case CLEAN_DETAIL: {
-      return {
-        ...state,
-        dogById: {},
-      };
-    };
 
     case GET_TEMPERAMENTS: {
       return {
         ...state,
         allTemperaments: payload,
-      };
-    };
-    
-    case DELETE_DOG: {
-      return {
-        ...state,
       };
     };
     
@@ -105,75 +93,6 @@ const rootReducer = (state = initialState, {type, payload}) => {
         allDogs: orderAlphabetic
       };
     };
-
-    // case ORDER_WEIGHT: {
-    //   const allDogsWeight = state.allDogsCopy;
-    //   const orderWeight = payload === true
-    //   ? allDogsWeight.sort((a,b) => {
-    //     if (parseInt(a.weight) > parseInt(b.weight)) return 1;
-    //     if (parseInt(a.weight) < parseInt(b.weight)) return -1;
-    //     return 0;
-    //     })
-    //   : allDogsWeight.sort((a,b) => {
-    //     if (parseInt(a.weight) < parseInt(b.weight)) return 1;
-    //     if (parseInt(a.weight) > parseInt(b.weight)) return -1;
-    //     return 0;
-    //   })
-    //   return {
-    //     ...state,
-    //     allDogs: orderWeight
-    //   };
-    // };
-
-                                                                               // case ORDER_WEIGHT: {
-    //   const allDogsWeight = state.allDogs;
-    //   const orderWeight = payload === false
-    //   ? allDogsWeight.sort((a, b) => {
-    //     const averageA = averageWeight(a.weight);
-    //     const averageB = averageWeight(b.weight);
-    //     return averageA - averageB;
-    //   })
-    //   : allDogsWeight.sort((a, b) => {
-    //     const averageA = averageWeight(a.weight);
-    //     const averageB = averageWeight(b.weight);
-    //     return averageB - averageA;
-    //   })
-
-    //   return {
-    //     ...state,
-    //     allDogs: orderWeight
-    //   };
-    // };
-
-    // case ORDER_WEIGHT: {
-    //   const allDogsWeight = state.allDogsCopy;
-    //   const orderWeight = payload === true
-    //     ? allDogsWeight.sort((a, b) => {
-    //         const weightA = parseWeight(a.weight);
-    //         const weightB = parseWeight(b.weight);
-    
-    //         if (weightA.number === weightB.number) {
-    //           return weightA.subNumber - weightB.subNumber;
-    //         }
-    
-    //         return weightA.number - weightB.number;
-    //       })
-    //     : allDogsWeight.sort((a, b) => {
-    //         const weightA = parseWeight(a.weight);
-    //         const weightB = parseWeight(b.weight);
-    
-    //         if (weightA.number === weightB.number) {
-    //           return weightB.subNumber - weightA.subNumber;
-    //         }
-    
-    //         return weightB.number - weightA.number;
-    //       });
-    
-    //   return {
-    //     ...state,
-    //     allDogs: orderWeight
-    //   };
-    // };
 
     default:
       return { ...state }

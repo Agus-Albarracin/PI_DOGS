@@ -2,9 +2,10 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 10% 80% 10%;
-    background-image: url("../img/fondo.jpg");
-    background-size:cover;
-    background-attachment: fixed;
+    background-image: url("https://www.mascotas.com/uploads/Upload_6179ee9cc15db_27102021.jpeg");
+    background-size:contain;
+    background-repeat: round;
+
     min-height: 742px;
     height: 100%;
     width: 100%;

@@ -1,12 +1,13 @@
 .navBar_cont{
  display: grid;
- grid-template-columns: 20% 15% 20% 25% 20%;
+ grid-template-columns: 10% 15% 20% 25% 10% 20%;
  place-items: center;
  background-color: hsla(0, 0%, 0%, 0.39);
 }
 
 .nav_logo{ 
 width: 180px;
+height: 90px;
 }
 
 .select{
@@ -61,7 +62,34 @@ width: 180px;
     background:#fff;
     color:#060606;
   }
+
+  .radio_orders{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+    margin-left: 50px;
+    background:#000000;
+    color:#fff;
+    border:none;
+    box-shadow: 1px 2px 5px;
+    border-radius: 5px;
   
+    height:41px;
+    font-size:auto;
+    cursor:pointer;
+    transition:500ms ease all;
+    outline:none;
+  }
+  .radio_orders:hover{
+    background:#fff;
+    color:#060606;
+  }
+  .radio_orders{
+   margin-left: 40%;
+  }
 @media (max-width: 720px){
     .navBar_cont{ 
       display: flex;
@@ -72,6 +100,7 @@ width: 180px;
     }
     .nav_logo{ 
       width: 50%;
+      margin-left: 0%;
     }
     
     .select{
@@ -87,6 +116,35 @@ width: 180px;
         width: 60%;
         margin-bottom: 10%;
       }
+
+
+  .radio_orders{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        width: 20%;
+        text-align: center;
+        margin-left: 50px;
+        background:#000000;
+        color:#fff;
+        border:none;
+        box-shadow: 1px 2px 5px;
+        border-radius: 5px;
+        
+        margin-right: 5%;
+        height:41px;
+        font-size:auto;
+        cursor:pointer;
+        transition:500ms ease all;
+        outline:none;
+      }
+
+  .radio_orders:hover{
+        background:#fff;
+        color:#060606;
+      }
+
   }
 
 

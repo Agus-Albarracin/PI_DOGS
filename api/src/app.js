@@ -9,7 +9,6 @@ const { routes } = require("./routes/indexroutes")
 require("./db")
 
 
-// app__server.name = "API__DOGS";
 
 app__server.use(express.json())
 app__server.use(morgan("dev"));
@@ -31,13 +30,6 @@ app__server.use((req, res, next) => {
 
 app__server.use("/", routes);
 
-// // Error catching endware.
-// server.use((err, req, res, next) => { // eslint-disable-line no-unused-vars
-//    const status = err.status || 500;
-//    const message = err.message || err;
-//    console.error(err);
-//    res.status(status).send(message);
-//  });
 
 module.exports = app__server;
 

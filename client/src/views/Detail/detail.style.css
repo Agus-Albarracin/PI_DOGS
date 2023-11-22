@@ -19,22 +19,29 @@
    max-height: 400px;
    margin-top: 23%;
    margin-left: 40%;
-   border-radius: 10%;
+   border-top-left-radius: 10%;
+   border-bottom-left-radius: 10%;
 }
 .detail{
-    color: rgb(230, 179, 86);
+    background-image: url("https://petzer.mx/cdn/shop/articles/como-cuidar-almohadillas-perro_fa8b3ebc-27ba-41ff-b5a3-4db153d3a401_800x.jpg?v=1653844062");
+    background-size: cover;
+    background-repeat: round;
+    height: 400px;
+    color: rgb(251, 251, 251);
     font-family: cursive;
     display: grid;
     grid-column: 2/3;
     place-items: center;
     place-content: center;
-    margin-top: 7%;
+    margin-top: 23%;
     margin-right: 40%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
 }
 
 .footerdetail{
     background-color: rgba(0, 0, 0, 0.118);
-    color: rgba(255, 255, 255, 0.648);
+    color: rgba(6, 6, 6, 0.348);
     display: grid;
     grid-row: 3/4;
     grid-column: 1/3;

@@ -48,12 +48,10 @@
 @media (max-width: 360px){
     .home_cont{
         display: grid;
-        background-image: url("https://nupec.com/wp-content/uploads/2021/12/dog-hair-pattern-background-24LK6P3-1024x685.jpg");
         background-size:cover;
         background-attachment: fixed;
         grid-template-columns: auto;
         grid-template-rows: auto;
-        background-color: rgb(255, 157, 38);
         min-width: 640px;
        }
 

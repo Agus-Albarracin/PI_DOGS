@@ -5,7 +5,7 @@ import Select from "react-select"
 import { useState } from "react"
 import { useSelector } from "react-redux"
 
-const NavBar = ({busqueda, handleChange, onClick, ot, handleSelectChange}) =>{
+const NavBar = ({busqueda, handleChange, onClick, ot, handleSelectChange, handleOrderChange, order}) =>{
 
 // const allDogs = useSelector((state) => state.allDogs)
 // //? filtro de temps
@@ -50,7 +50,8 @@ return(
 
         <Select className="select"
          options={ot}
-         onChange= { handleSelectChange } 
+         onChange= { handleSelectChange }
+         isSearchable
         >
         </Select>
      
@@ -63,11 +64,18 @@ return(
         placeholder="WRITE TO SEARCH">
         </input>
         
+
+        <div className="radio_orders" onClick={ handleOrderChange }>
+          {order ? "A-Z" : "Z-A"}
+        </div>
+       
+
         <a href="http://localhost:5173/form">
         <button className="nav_button">
         <p>CREATE</p>
         </button>
         </a>
+
         
 </div>
 )

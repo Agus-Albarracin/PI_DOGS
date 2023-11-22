@@ -45,10 +45,6 @@ export const _getDog__ById__ByName = (name) => {
   };
 };
 
-// Limpia el estado
-export const cleanDetail = () => {  
-  return {type: CLEAN_DETAIL}
-};
 
 // Trae los temperamentos
 export const getTemperaments = () => {  
@@ -80,18 +76,18 @@ export const postDog = (newDog) => {
 };
 
 // Borra un perro creado.
-export const deleteDog = (id) => {  
-  return async (dispatch) => {
-    // try {
-      const { data } = await axios.delete(`/dogs/${id}`)
-      return dispatch({ type: DELETE_DOG, payload: data });
-  //   }
-  //   catch (error) {
-  //     console.log(error.message);
-  //     return error.message;
-  //   }
-  };
-};
+// export const deleteDog = (id) => {  
+//   return async (dispatch) => {
+//     // try {
+//       const { data } = await axios.delete(`/dogs/${id}`)
+//       return dispatch({ type: DELETE_DOG, payload: data });
+//   //   }
+//   //   catch (error) {
+//   //     console.log(error.message);
+//   //     return error.message;
+//   //   }
+//   };
+// };
 
 // Filtra por temperamento
 export const filterByTemp = (temp) => {
@@ -108,9 +104,4 @@ export const filterByOrigin = (origin) => {
 // Ordena alfabeticamente
 export const orderAlphabetic = (order) => {
   return { type: ORDER_ALPHABETIC, payload: order };
-};
-
-// Ordena por peso
-export const orderWeight = (order) => {
-  return { type: ORDER_WEIGHT, payload: order };
 };

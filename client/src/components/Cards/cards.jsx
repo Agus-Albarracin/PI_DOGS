@@ -4,16 +4,13 @@ import "./cards.style.css"
 import Card from "../Card/card"
 import Paginado from "../Paginado/paginado"
 import NavBar from "../NavBar/navbar"
-
 //react
 import React from "react"
 import { useState } from "react"
-
 //react-redux
 import { useSelector, useDispatch } from "react-redux"
 //actions
-import { filterByOrigin } from "../../redux/actions/actions";
-
+import { filterByOrigin, orderAlphabetic } from "../../redux/actions/actions";
 
 const Cards = ({}) =>{
 
@@ -30,6 +27,7 @@ const lastpage = currentPage * page;
 const firstpage = lastpage - page;
 const currentDogs = allDogs?.slice(firstpage, lastpage);
 console.log("current dogs", currentDogs)
+
 
 //*  SELECTS ORIGINS *//
 const handleFilterByOrigin = (event) => {
@@ -49,12 +47,13 @@ const [navdogs, setNavdogs] = useState([])
 const filtrar = (value) =>{
 //    console.log("value que llega a filtrar", value)
 //    console.log("filtrar allDogs total de perros:", allDogs)
-   
-   var filtrados = allDogs.filter((elemento) =>elemento.name.toString().toLowerCase().includes(value.toString().toLowerCase()) || elemento.id == value)
+var filtrados = allDogs.filter((dog) =>
+dog.name.toString().toLowerCase().includes(value.toString().toLowerCase()) || dog.id == value)
        
     console.log( "elementos individual", filtrados) 
     setNavdogs(filtrados)
     setSdogs([])
+
 }
 
 const handleChange = (event) =>{
@@ -78,12 +77,14 @@ const filter_temp = (value) =>{
      setNavdogs([])    
 }
 
+
 const handleSelectChange = (event) =>{
    const value_select_event = event.value
    //valor de lo que captura el selecct
    console.log("valor del select", value_select_event)
    setVselect(value_select_event)
    filter_temp(value_select_event)  
+
 }
 
 
@@ -108,6 +109,17 @@ const ot = allTempe.map((t) => new Object({
 }))
 // console.log(ot)
 
+//** Filtro por nombres. */
+
+const [order, setOrder] = useState(false)
+
+const handleOrderChange = () => {
+  dispatch(orderAlphabetic(order))
+  setCurrentPage(1)
+  order ? setOrder(false) : setOrder(true)
+
+};
+
 
 return( <div className="box_cont">
 { /*🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶  HTML DE NavBar 🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶🔶*/}
@@ -120,6 +132,9 @@ busqueda={busqueda}
 
 handleSelectChange={ handleSelectChange}
 ot={ot}
+
+handleOrderChange={handleOrderChange}
+order={order}
 />
 
 </div>
